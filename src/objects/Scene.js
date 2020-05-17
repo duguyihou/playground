@@ -1,20 +1,26 @@
 import { Group } from 'three';
 import Land from './Land/Land.js';
-import Flower from './Flower/Flower.js';
 import BasicLights from './Lights.js';
+import BowlingBall from './Bowling/Bowling-ball.js'
+import BowlingPin from './Bowling/Bowling-pin.js'
 
 export default class SeedScene extends Group {
   constructor() {
     super();
 
     const land = new Land();
-    const flower = new Flower();
     const lights = new BasicLights();
+    const bowlingBall = new BowlingBall()
+    const bowlingPin = new BowlingPin()
 
-    this.add(land, flower, lights);
+    bowlingBall.scale.set(2,2,2)
+
+    // bowlingPin.rotation.x = Math.PI
+    bowlingPin.scale.set(2,2,2)
+    this.add(lights, land, bowlingBall, bowlingPin);
   }
 
   update(timeStamp) {
-    this.rotation.y = timeStamp / 10000;
+    // this.rotation.y = timeStamp / 10000;
   }
 }
