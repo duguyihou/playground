@@ -12,11 +12,11 @@ export default class SeedScene extends Group {
     const lights = new BasicLights();
     const bowlingBall = new BowlingBall()
     const bowlingPin = new BowlingPin()
-
-    bowlingBall.scale.set(2,2,2)
-
-    // bowlingPin.rotation.x = Math.PI
-    bowlingPin.scale.set(2,2,2)
+    // Land
+    land.scale.set(6,6,6)
+    // Bowling Pin
+    bowlingPin.scale.set(1.2,1.2,1.2)
+    bowlingPin.translateZ(8)
     this.add(lights, land, bowlingBall, bowlingPin);
   }
 
