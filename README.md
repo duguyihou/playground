@@ -41,8 +41,5 @@ with custom script includes you might find yourself having to refactor
 them. See [Issue 15](https://github.com/edwinwebb/three-seed/issues/15) 
 for an example.
 
-## Advanced Usage
-This project has a branch with a host of additional features for the advanced user. It contains shaders, controls, tweens, and react with redux. See the [advanced branch](https://github.com/edwinwebb/three-seed/tree/advanced).
-
 ## License
 [MIT](https://github.com/edwinwebb/three-seed/blob/master/LICENSE)
