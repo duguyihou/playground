@@ -1,10 +1,10 @@
 /**
  * entry.js
- * 
- * This is the first file loaded. It sets up the Renderer, 
- * Scene and Camera. It also starts the render loop and 
+ *
+ * This is the first file loaded. It sets up the Renderer,
+ * Scene and Camera. It also starts the render loop and
  * handles window resizes.
- * 
+ *
  */
 
 import { WebGLRenderer, PerspectiveCamera, Scene, Vector3 } from 'three';
@@ -19,7 +19,7 @@ const seedScene = new SeedScene();
 scene.add(seedScene);
 
 // camera
-camera.position.set(6,3,-10);
+camera.position.set(10,15,-25);
 camera.lookAt(new Vector3(0,0,0));
 
 // renderer
@@ -35,7 +35,7 @@ const onAnimationFrameHandler = (timeStamp) => {
 window.requestAnimationFrame(onAnimationFrameHandler);
 
 // resize
-const windowResizeHanlder = () => { 
+const windowResizeHanlder = () => {
   const { innerHeight, innerWidth } = window;
   renderer.setSize(innerWidth, innerHeight);
   camera.aspect = innerWidth / innerHeight;
