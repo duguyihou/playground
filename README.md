@@ -4,10 +4,6 @@ Three.js starter project boilerplate bundled with Webpack.
 
 This project will help you get started on your next three.js project and provide a foundation for extension. It sets up a simple scene, camera and renderer in a modern Javascript environment.
 
-The [advanced branch](https://github.com/edwinwebb/three-seed/tree/advanced) maintains a more complex environment including controls, post-processing, redux stores, react, tweeing, async/await and more.
-
-[Online Demo](http://edwinwebb.github.io/three-seed/)
-
 ## Install
 Before you begin, make sure you are comfortable with terminal commands and have [Node and NPM installed](https://www.npmjs.com/get-npm).
 ```bash
