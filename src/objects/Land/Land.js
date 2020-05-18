@@ -1,16 +1,23 @@
-import { Group, ObjectLoader  } from 'three';
+import { Group } from 'three';
+import { loadScene } from "../../Loaders/Loader.js";
 import MODEL from './land.json';
 
 export default class Land extends Group {
   constructor() {
-    const loader = new ObjectLoader();
-    
     super();
 
-    this.name = 'land';
+    this.loadingFunction = (p) => {
+      console.log("loading land", p);
+    };
+    this.name = "land";
+    this.load();
+  }
 
-    loader.load(MODEL, (mesh)=>{
-      this.add(mesh);
-    });
+  async load() {
+    const land = await loadScene(MODEL, this.loadingFunction);
+    land.scale.set(6, 6, 6);
+    this.land = land;
+
+    this.add(land);
   }
 }

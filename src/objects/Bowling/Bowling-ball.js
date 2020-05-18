@@ -1,16 +1,12 @@
 import { Group } from 'three';
-import {loadScene, loadTexture} from '../../Loaders/Loader.js'
+import {loadScene } from '../../Loaders/Loader.js'
 import MODEL from './bowling-ball.json';
-import ballTexture from './bowling-ball.jpg'
 
 export default class BowlingBall extends Group {
   constructor() {
     super();
-
     this.loadingFunction = (p) => {
-      loadTexture(ballTexture,()=>{
-        console.log('loading bowling ball', p)
-      })
+      console.log('loading pin', p)
     }
     this.name = 'ball';
     this.load();
@@ -24,6 +20,7 @@ export default class BowlingBall extends Group {
     ball.translateY(1.2)
     ball.translateX(-3)
     this.ball = ball;
+    console.log(ball)
 
     this.add(ball);
   }
