@@ -11,19 +11,6 @@ The [advanced branch](https://github.com/edwinwebb/three-seed/tree/advanced) mai
 ## Install
 Before you begin, make sure you are comfortable with terminal commands and have [Node and NPM installed](https://www.npmjs.com/get-npm).
 
-### Install via Download
-First download the [zip of the project](https://github.com/edwinwebb/three-seed/archive/master.zip) and extract it. Then in terminal at that folder type `npm install` to set things up. To get going run: `npm start`.
-
-### Install with Git
-In terminal clone the project into a directory of your choice then delete the git folder to start fresh.
-
-```bash
-git clone --depth=1 https://github.com/edwinwebb/three-seed.git my-project
-cd my-project
-rm -rf .git
-npm install
-```
-
 ## Running the development server
 To see the changes you make to the starter project go to the project folder in terminal and type...
 
@@ -55,19 +42,8 @@ with custom script includes you might find yourself having to refactor
 them. See [Issue 15](https://github.com/edwinwebb/three-seed/issues/15) 
 for an example.
 
-## About the models
-Both models were exported from the [free 3D software Blender](https://www.blender.org/) using the [three.js exporter](https://github.com/timoxley/threejs/tree/master/utils/exporters/blender). They were downloaded from the Google Poly project. 
-
-## Building the project for the web
-Once you are happy with your project you'll be sure to want to show it off. Running `npm run build` in terminal will bundle your project into the folder `./build/`. You can upload this directory to a web server. For more complex results read [this guide](https://webpack.js.org/guides/production/).
-
 ## Advanced Usage
 This project has a branch with a host of additional features for the advanced user. It contains shaders, controls, tweens, and react with redux. See the [advanced branch](https://github.com/edwinwebb/three-seed/tree/advanced).
-
-## CC Attributes
-Floating island : https://poly.google.com/view/eEz9hdknXOi
-
-Flower: https://poly.google.com/view/eydI4__jXpi
 
 ## License
 [MIT](https://github.com/edwinwebb/three-seed/blob/master/LICENSE)
