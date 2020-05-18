@@ -10,12 +10,14 @@ The [advanced branch](https://github.com/edwinwebb/three-seed/tree/advanced) mai
 
 ## Install
 Before you begin, make sure you are comfortable with terminal commands and have [Node and NPM installed](https://www.npmjs.com/get-npm).
+```bash
+npm install
+```
 
 ## Running the development server
 To see the changes you make to the starter project go to the project folder in terminal and type...
 
 ```bash
-
 npm start
 ```
 
