@@ -15,6 +15,7 @@ Before you begin, make sure you are comfortable with terminal commands and have 
 To see the changes you make to the starter project go to the project folder in terminal and type...
 
 ```bash
+
 npm start
 ```
 
