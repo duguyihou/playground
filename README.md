@@ -1,4 +1,5 @@
-# Three Seed
+# Three.js
+> CG Assignment
 
 Three.js starter project boilerplate bundled with Webpack.
 
