@@ -11,7 +11,7 @@ import { WebGLRenderer, PerspectiveCamera, Scene, Vector3 } from 'three';
 import SeedScene from './objects/Scene.js';
 
 const scene = new Scene();
-const camera = new PerspectiveCamera();
+const camera = new PerspectiveCamera(50, innerWidth/innerHeight, 1, 1000);
 const renderer = new WebGLRenderer({antialias: true});
 const seedScene = new SeedScene();
 
